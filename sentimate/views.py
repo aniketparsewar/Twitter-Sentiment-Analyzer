@@ -7,11 +7,11 @@ from textblob import TextBlob
 def tweet(word):
     if not word:
         word='Twitter'
-    consumer_key = 'lI7sxfC9Jky8l4s92ynxi1WF6'
-    consumer_secret = 'c1BPCYFEMgZfrtjz7Hr6rcYRc77zOS5OIOqX7a7LlFKRWmmyGx'
+    consumer_key = 'API-KEY'
+    consumer_secret = 'API-KEY'
 
-    access_token = '4567521216-nYWaj4NcxpWvHjHWKod8c31fzlOdPUfOzVNNt81'
-    access_token_secret = 'T842HsFhYARg0BF3kHjdLwRwtTFaqjUKb5dTtrpisJS60'
+    access_token = 'access-token'
+    access_token_secret = 'access-token'
 
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_token, access_token_secret)
