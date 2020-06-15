@@ -13,6 +13,7 @@
             font-family: arial, sans-serif;
             border-collapse: collapse;
             width: 100%;
+            margin-bottom: 15%;
       }
       th {
          border: 1px solid #dddddd;
@@ -23,6 +24,7 @@
          border: 1px solid #dddddd;
          text-align: left;
          padding: 8px;
+         word-break: break-all;
       }
       tr:nth-child(even) {
          background-color: #dddddd;
@@ -69,6 +71,7 @@
          .fa {font-size:100px;}
          .footer {
          position: fixed;
+         height:12%;
          left: 0;
          bottom: 0;
          width: 100%;
@@ -95,10 +98,11 @@
 
       <h3 class="w3-center" id="link1"></h3>
       {% load list1 %}
-      <table>
+      <div class="table-responsive">
+      <table style="table-layout: fixed; width: 100%;">
          <tr>
-            <th>Top Tweets</th>
-            <th>Sentiment</th>
+            <th style="width:75%">Top Tweets</th>
+            <th style="width:25%">Sentiment</th>
          </tr>
       {% for key, value in tweet_dict.items %}
          <tr>
@@ -113,6 +117,7 @@
          </tr>
       {% endfor %}
       </table>
+      </div>>
       <div class="footer">
          <p>Design and Developed by Aniket</p>
          <a class="w3-footer" href="https://www.linkedin.com/in/aniketparsewar"><i class="fab fa-linkedin"></i></a>
